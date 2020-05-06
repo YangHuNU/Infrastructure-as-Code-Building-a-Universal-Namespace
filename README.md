@@ -9,9 +9,11 @@
   + Presentation linked [here](https://www.youtube.com/watch?v=UXmL-Ll2sHI&feature=youtu.be)
   + Slides linked [here](https://docs.google.com/presentation/d/1PSZz1MIJzuXC3-Sa0DIfS2ucxKkK4nfCtG7tOHgY0P4/edit?usp=sharing)
 - **Minimum Viable Product**: A set of organized playbooks that automatically deploy Upspin on MOC
-  + Installation instruction:
-  + Clone this repository
-  + Refer to [this link](./doc/openstack_setups.md) for installation instruction 
+  + OpenStack Installation Instruction:
+    * Clone this repository
+    * Refer to [this link](./doc/openstack_setups.md) for installation instruction 
+  + OpenShift Project:
+    * docker image please refer to [this link](https://github.com/ZeyuKeithFu/upspin-openshift)
 
 
 ## 1. Vision and Goals Of The Project

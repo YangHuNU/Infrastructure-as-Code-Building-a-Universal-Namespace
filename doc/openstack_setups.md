@@ -9,6 +9,10 @@
 * Sign up for a new Upspin account
     - Follow the [link](https://upspin.io/doc/signup.md)
 
+
+**Notes on Ansible Roles**
+In OpenStack project, Ansible playbooks are organized by [roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html). Ansible roles is a playbook organization tool that simplifies the process of executing for users. Importing roles inside site.yml and it will automatically find the main.yml file under the imported roles. There are two role directories in this project: openstack and upspin. Opentack directory handles instance management on OpenStack platform. Upspin directory handles Upspin server deployment. Users will only need to provide variable files as instructed below and then run site.yml file in root directory in order to complete the process. 
+
 ## Configuration:
 * roles/openstack/vars/auth_vars.yml   
 Create a `auth_vars.yml` file to provide required SSO authentication vars for OpenStack platform, as the following format:
@@ -58,4 +62,5 @@ Run:
 ```
 ansible-playbook site.yml
 ```
-Use `-vvv` to enable different level of verbose logging.
+Use `-vvv` to enable different level of verbose logging.  
+
